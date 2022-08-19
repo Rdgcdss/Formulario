@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <title>Formulario de inscrição</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Cadastro de alunos.</h1>
+      <p id="subtitulo">Complete suas informações:</p>
+      <br />
+    </div>
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label for="nome"><strong>Nome :</strong></label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+        <div class="campo">
+          <label for="nome"><strong>Sobrenome :</strong></label>
+          <input type="text" name="Sobrenome" id="Sobrenome" required />
+        </div>
+      </fieldset>
+      <div class="campo">
+        <label for="email"><strong> Número para contato :</strong></label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="campo">
+        <label><strong>Selecione o ensino que deseja cursar :</strong></label>
+        <input type="radio" name="alunos" value="ensino medio" checked /> Ensino
+        m[edio
+        <label>
+          <input type="radio" name="alunos" value="Jardim" /> Jardim de infância
+        </label>
+        <label>
+          <input type="radio" name="alunos" value="Ensino fundamental" /> Ensino
+          fundamental
+        </label>
+      </div>
+      <div class="campo">
+        <label for="senioridade">Senioridade </label>
+        <select id="senioridade">
+          <option selected disabled value="">Selecione</option>
+          <option>primeiro ano</option>
+          <option>Creche</option>
+          <option>Quinta série</option>
+        </select>
+      </div>
+      <fieldset class="grupo">
+        <div class="campo">
+          <label><strong>Selecione o bairro que deseja estudar:</strong></label>
+          <input type="checkbox" id="bairro" value="Duque de caxias" />
+          <label for="bairro"> Duque de Caxias</label>
+          <input type="checkbox" id="bairro" value="Jacarépagua" />
+          <label for="bairro"> Jacarépagua </label>
+          <input type="checkbox" id="bairro" value="Marechal hermes" />
+          <label for="bairro"> Marechal hermes</label>
+          <input type="checkbox" id="bairro" value="Centro" />
+          <label for="bairro"> Centro</label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <br />
+        <label><strong>Conte sobre o estudante :</strong></label>
+        <textarea row="6" style="width: 26em" id="experiencia"></textarea>
+      </div>
+      <button class="botao" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
